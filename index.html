@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="CSS/index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GTBank</title>
+  <link rel="shortcut icon"
+    href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/GTBank_logo.svg/960px-GTBank_logo.svg.png"
+    type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <style>
+    .initiatives-section {
+      padding: 2rem 1rem;
+      max-width: 100%;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-title span {
+      color: #003087;
+      border-bottom: 3px solid #003087;
+    }
+
+    .initiative-card {
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      overflow: hidden;
+      height: 100%;
+    }
+
+    .card-img-collage {
+      height: 220px;
+      overflow: hidden;
+    }
+
+    .card-img-collage img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .initiative-card .card-body {
+      padding: 1.2rem;
+    }
+
+    .initiative-card .card-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .initiative-card .card-text {
+      color: #555;
+      font-size: 0.9rem;
+    }
+
+    .carousel-control-next {
+      width: 48px;
+      height: 48px;
+      background: white;
+      border-radius: 50%;
+      border: 1px solid #ddd;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -20px;
+      opacity: 1;
+    }
+
+    .carousel-control-next-icon {
+      filter: invert(1) brightness(0);
+      width: 18px;
+      height: 18px;
+    }
+
+    #initiativesCarousel {
+      width: 50%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NOTICE BAR -->
+  <div class="headerOne">
+    <div id="onlyNotice">Important Notice:</div>
+    <div id="note">Please be mindful of fake sites run by fraudulent parties
+      posing as Guaranty Trust Bank Ltd or its affiliates. Do not disclose your
+      personal information and financial details to anyone online or anywhere else.
+    </div>
+  </div>
+
+  <!-- TOP BAR -->
+
+  <header>
+    <div class="top-bar-left">
+      <div class="country-dropdown">
+        <button class="country-btn">
+          <img src="https://flagcdn.com/w40/ng.png" alt="">
+          ▾
+        </button>
+
+        <div class="country-list">
+
+          <a href="#">
+            <img src="https://flagcdn.com/w40/ng.png" alt="">
+            Nigeria
+          </a>
+
+          <a href="#">
+            <img src="https://flagcdn.com/w40/gh.png" alt="">
+            Ghana
+          </a>
+
+          <a href="#">
+            <img src="https://flagcdn.com/w40/gm.png" alt="">
+            Gambia
+          </a>
+
+          <a href="#">
+            <img src="https://flagcdn.com/w40/ke.png" alt="">
+            Kenya
+          </a>
+
+          <a href="#">
+            <img src="https://flagcdn.com/w40/tz.png" alt="">
+            Tanzania
+          </a>
+
+          <a href="#">
+            <img src="https://flagcdn.com/w40/sl.png" alt="">
+            Sierra Leone
+          </a>
+
+          <a href="#">
+            <img src="https://flagcdn.com/w40/rw.png" alt="">
+            Rwanda
+          </a>
+
+          <a href="#">
+            <img src="https://flagcdn.com/w40/gb.png" alt="">
+            United Kingdom
+          </a>
+
+          <a href="#">
+            <img src="https://flagcdn.com/w40/fr.png" alt="">
+            France
+          </a>
+
+        </div>
+      </div>
+      <ul>
+        <li class="dropdown">
+          <a href="#">Locate ▾</a>
+          <div class="dropdown-content">
+            <a href="#">Locate a Branch</a>
+            <a href="#">Locate an ATM</a>
+          </div>
+        </li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="help.html">Help Centre</a></li>
+        <li><a href="#">Security</a></li>
+        <li><a href="#"><i class="bi bi-search" style="color:white"></i></a></li>
+      </ul>
+    </div>
+    <button class="login-btn">
+      <i class="bi bi-lock"></i> Online Banking Login
+    </button>
+    <!-- <button class="login-btn1">
+      <i class="bi bi-lock"></i> Login
+    </button> -->
+
+  </header>
+  <nav class="responsive-nav">
+    <ul>
+      <li>
+        <a href="#">
+          <img src="/menu bar.svg" alt="">
+        </a>
+      </li>
+
+      <li>
+        <img src="/search icon.svg" alt="">
+      </li>
+      <button class="login-btn2">
+        <i class="bi bi-lock"></i> Login
+      </button>
+    </ul>
+    <div class="gtco-logo1">
+       <img src="/Guaranty Trust Bank Ltd _ GTBank/download (199).svg" width="90px" alt="">
+    </div>
+
+  </nav>
+
+  <!-- MAIN NAV -->
+  <div class="main-nav">
+    <nav>
+      <ul class="list">
+
+        <li><a href="./home.html"><i class="bi bi-house-fill" style="font-size:20px"></i></a></li>
+
+        <!-- PERSONAL -->
+        <li class="dropdown">
+          <a href="#">Personal</a>
+          <ul class="dropdown-content">
+            <li class="nested-dropdown">
+              <a href="#">Accounts ›</a>
+              <ul class="nested-content">
+                <li><a href="Current.html">Current Accounts</a></li>
+                <li><a href="#">Savings Investment Accounts</a></li>
+                <li><a href="#">Compare Accounts</a></li>
+                <li><a href="#">Open an Account</a></li>
+              </ul>
+            </li>
+            <li class="nested-dropdown">
+              <a href="services.html">Services ›</a>
+              <ul class="nested-content">
+                <li><a href="#">e-Banking</a></li>
+                <li><a href="#">IMT Services</a></li>
+                <li><a href="#">Other Services</a></li>
+              </ul>
+            </li>
+            <li class="nested-dropdown">
+              <a href="#">Cards ›</a>
+              <ul class="nested-content">
+                <li><a href="#">Naira Debit Cards</a></li>
+                <li><a href="#">Dollar Debit Cards</a></li>
+                <li><a href="#">Dollar Credit Cards</a></li>
+                <li><a href="#">Prepaid Cards</a></li>
+                <li><a href="#">Compare Cards</a></li>
+                <li><a href="#">Card Secure</a></li>
+                <li><a href="#">Instant Card Issuance</a></li>
+                <li><a href="#">Card Deals</a></li>
+              </ul>
+            </li>
+            <li class="nested-dropdown">
+              <a href="#">Loans ›</a>
+              <ul class="nested-content">
+                <li><a href="#">Salary Advance</a></li>
+                <li><a href="#">School Fees Advance</a></li>
+                <li><a href="#">MaxAdvance</a></li>
+                <li><a href="#">MaxPlus</a></li>
+                <li><a href="#">GTMortgage</a></li>
+                <li><a href="#">Premium Advance</a></li>
+                <li><a href="#">QuickCredit</a></li>
+              </ul>
+            </li>
+            <li class="nested-dropdown">
+              <a href="#">Ways to Bank ›</a>
+              <ul class="nested-content">
+                <li><a href="#">GTWorld App</a></li>
+                <li><a href="#">Internet Banking</a></li>
+                <li><a href="#">ATMs</a></li>
+                <li><a href="#">GTAssistant</a></li>
+                <li><a href="#">GTExpress</a></li>
+                <li><a href="#">e-Branches</a></li>
+                <li><a href="#">GTConnect</a></li>
+                <li><a href="#">Video Authentication</a></li>
+                <li><a href="#">GT eToken Application</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Non Resident Nigerians (NRN) Service</a></li>
+            <li class="nested-dropdown">
+              <a href="#">Private Banking ›</a>
+              <ul class="nested-content">
+                <li><a href="#">Tailored Products</a></li>
+                <li><a href="#">Premium Services</a></li>
+                <li><a href="#">Why Choose GTBank?</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <!-- BUSINESS -->
+        <li class="dropdown">
+          <a href="#">Business</a>
+          <ul class="dropdown-content">
+            <li><a href="#">SME Banking</a></li>
+            <li><a href="#">Business Banking</a></li>
+            <li><a href="#">Commercial Banking</a></li>
+            <li><a href="#">Corporate Banking</a></li>
+            <li><a href="#">International Trade</a></li>
+            <li><a href="#">Cards</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+        </li>
+
+        <!-- ABOUT US -->
+        <li class="dropdown">
+          <a href="./media.html">About Us</a>
+          <ul class="dropdown-content">
+            <li><a href="#">Our Company</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Corporate Social Responsibility</a></li>
+            <li><a href="#">COVID-19 Guidance</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Open an Account</a></li>
+
+      </ul>
+    </nav>
+
+
+    <!-- HAMBURGER for mobile -->
+    <button class="hamburger"></button>
+
+    <div class="gtco-logo">
+      <img src="/gt logo 2.svglogo 2.svg" width="90px" alt="">
+    </div>
+  </div>
+
+
+  <!-- HERO -->
+  <div class="hero">
+
+    <!-- SLIDER -->
+    <div class="slider">
+      <div class="slides">
+        <!-- <div class="slide">
+          <div><img src="/Gtco.jpg" alt="GTCO"></div>
+          <div class="text"><span>1st - 3rd May, 2016</span>
+            <span style="color: black;">Masterclass. Street Food. Retail stall</span><span class="text1">Attendence is
+              free</span>
+          </div>
+          <div class="btn">
+            <button>See Details</button>
+          </div>
+        </div> -->
+        <div class="slide one">
+          <!-- <img src="/Guaranty Trust Bank Ltd _ GTBank/imgi_50_qcl_web-1_2026-02-23-164502_svzo.jpg" alt="Just Dial"> -->
+          <div class="text">Quick Airtime Loan <span>Fast recharge at a fraction of the usual cost</span>
+            Terms and Conditions Apply</div>
+          <div class="btn">
+            <button>See Details</button>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="/Guaranty Trust Bank Ltd _ GTBank/imgi_51_website_bvn-x-nin.jpg" alt="BVN NIN">
+          <div class="text"><span>Link your BVN and NIN To keep your account active</span></div>
+          <div class="btn">
+            <button>Link here</button>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="/Guaranty Trust Bank Ltd _ GTBank/imgi_52_hero-guides_fluid.jpg" alt="POS">
+          <div class="text">Zero Processing Charges For Life On <span>All GTBank POS Terminals</span>
+            <span style="color: #696F73;">Terms and Conditions Apply</span>
+          </div>
+          <div class="btn">
+            <button>Request Here</button>
+          </div>
+        </div>
+        <div class="slide four">
+          <!-- <img height="100vh" src="/Guaranty Trust Bank Ltd _ GTBank/imgi_53_gtworld_web-1_2026-02-23-164520_rrbq.jpg" alt="Open Account"> -->
+          <div class="text"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BANKING CARD -->
+    <div class="banking-card">
+      <h3>Online Banking</h3>
+      <div class="tab-btns">
+        <button class="tab-btn active">Personal</button>
+        <button class="tab-btn">Business</button>
+      </div>
+      <button class="login-card-btn">Login</button>
+      <div class="card-links">
+        <a href="#">Register</a>
+        <span>|</span>
+        <a href="#">Demo</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- product section -->
+  <div class="products-section">
+    <h2>Innovative Banking Products</h2>
+    <p>Tailored to your lifestyle, designed for your personal and business needs.</p>
+
+    <div class="grid-row">
+      <a href="#" class="grid-card">
+        <div class="grid-photo-1">
+          <img src="/Guaranty Trust Bank Ltd _ GTBank/imgi_54_account-opening.png" alt="">
+        </div>
+        <div class="grid-title">Open an Account Instantly</div>
+        <div class="grid-note">Need an account? Open an account for your business, your child or yourself in minutes.
+        </div>
+        <span class="grid-link">Click here to start</span>
+      </a>
+      <a href="#" class="grid-card">
+        <div class="grid-photo-1">
+          <img src="/Guaranty Trust Bank Ltd _ GTBank/imgi_55_250-x-192.jpg" alt="">
+        </div>
+        <div class="grid-title">GTCrea8</div>
+        <div class="grid-note">
+          Free is the new cool. Zero transfer fees. Zero SMS charge. Free ATM Card. Get a GTCrea8 account instantly
+        </div>
+        <span class="grid-link">Read More</span>
+      </a>
+      <a href="#" class="grid-card">
+        <div class="grid-photo">
+          <img src="/Guaranty Trust Bank Ltd _ GTBank/imgi_56_600x850.jpg" height="200px" , width="100%">
+        </div>
+        <div class="grid-title">Quick Credit</div>
+        <div class="grid-note">
+          Get up to N5 million in credit and pay back in 6-12 months. 2.95% monthly interest rate. No hidden fees.
+        </div>
+        <span class="grid-link">Get started now </span>
+      </a>
+      <a href="#" class="grid-card">
+        <div class="grid-photo-1">
+          <img src="/Guaranty Trust Bank Ltd _ GTBank/imgi_57_helpcenter.png" alt="helpcenter">
+        </div>
+        <div class="grid-title">Help Center</div>
+        <div class="grid-note">
+          Skip the queues and get all the answers you need right from your phone. Log your dispense errors from your
+          banking app. Check our How-To Guide for quick fixes.
+        </div>
+        <span class="grid-link">Read more</span>
+      </a>
+      <a href="#" class="grid-card">
+        <div class="grid-photo">
+          <img src="/Guaranty Trust Bank Ltd _ GTBank/imgi_58_public-offer-facts-segun-agbaje.webp" width="100%"
+            height="200px" alt="public offer">
+        </div>
+        <div class="grid-title">Facts Behind the GTCO Public Offer</div>
+        <div class="grid-note">
+          Watch the Group CEO of GTCO Plc speak at the Nigerian Exchange (NGX) Limited main floor on the "Facts Behind
+          the Offer" for its transformative capital-raising exercise.
+        </div>
+        <span class="grid-link">Watch Here </span>
+      </a>
+      <a href="#" class="grid-card">
+        <div class="grid-photo">
+          <img src="/Guaranty Trust Bank Ltd _ GTBank/imgi_59_2025-macroeconomics.webp" width="100%" height="200px"
+            alt="macroeconomics">
+        </div>
+        <div class="grid-title">2025 GTCO Macro-economic Outlook</div>
+        <div class="grid-note">
+          This article presents our forecasts and opinions of the broad Nigerian macroeconomic and banking sectors
+          trends that we expect would shape the economic landscape in 2025.
+        </div>
+        <span class="grid-link">Read the Report </span>
+      </a>
+      <a href="#" class="grid-card">
+        <div class="grid-photo">
+          <img src="/Guaranty Trust Bank Ltd _ GTBank/imgi_61_zero-pos-charges.webp" width="100%" height="200px"
+            alt="Zero POS Charges">
+        </div>
+        <div class="grid-title">Zero POS Charges</div>
+        <div class="grid-note">
+          With this initiative, all qualifying SME Merchants can now receive payments at zero cost, allowing them to
+          reduce operational expenses, whilst promoting the merchant’s enterprise, and enhancing customer experience.
+        </div>
+        <span class="grid-link">Learn More </span>
+      </a>
+      <a href="#" class="grid-card">
+        <div class="grid-photo-2">
+          <img src="/Guaranty Trust Bank Ltd _ GTBank/imgi_59_GTBank-Automated-Payment-System.svg" width="100%"
+            height="200px" alt="GAPS">
+        </div>
+        <div class="grid-title">Business Banking Made Easy</div>
+        <div class="grid-note">
+          Want to make salary or vendor payments at the comfort of your office or home without the involvement of your
+          account officer? Try GAPS.
+        </div>
+        <span class="grid-link">Get Started</span>
+      </a>
+    </div>
+  </div>
+
+
+
+  <!-- initiatives-section -->
+  <div class="intiative">
+    <div class="initiatives-section">
+    <h2 class="section-title">Our Initiatives</h2>
+
+    <div id="initiativesCarousel" class="carousel slide position-relative" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+
+        <div class="carousel-item active">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="initiative-card card h-100 ">
+                <div class="card-img-collage">
+                  <img src="/Guaranty Trust Bank Ltd _ GTBank/imgi_1_Food-and-Drink.webp" alt="Festival">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Festival</h5>
+                  <p class="card-text">We are creating global platforms that expand opportunities for individuals and
+                    businesses alike.</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-6">
+              <div class="initiative-card card h-100">
+                <div class="card-img-collage">
+                  <img src="/Guaranty Trust Bank Ltd _ GTBank/imgi_2_Fashion-Weekend.webp" alt="Fashion Weekend">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Through Fashion</h5>
+                  <p class="card-text">The GTCO Fashion Weekend is a consumer-focused fair and free business platform
+                    designed to showcase the best of African fashion.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="initiative-card card h-100">
+                <div class="card-img-collage">
+                  <img src="/Guaranty Trust Bank Ltd _ GTBank/imgi_3_Autism.webp" alt="Music Festival">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Music Festival</h5>
+                  <p class="card-text">Celebrating African music and talent on a world stage, bringing communities
+                    together through the power of sound.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="initiative-card card h-100">
+                <div class="card-img-collage">
+                  <img src="/Guaranty Trust Bank Ltd _ GTBank/imgi_4_you-read-400x350-1.jpg" alt="Tech Summit">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Tech Summit</h5>
+                  <p class="card-text">Driving innovation and digital transformation across Africa by connecting
+                    entrepreneurs with global tech leaders.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Next Arrow Only -->
+      <button class="carousel-control-next d-flex align-items-center justify-content-center position-absolute"
+        type="button" data-bs-target="#initiativesCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+  </div>
+  </div>
+  </head>
+
+  <section class="icon-container">
+    <div class="icons">
+      <div class="icon-img"><img src="/Guaranty Trust Bank Ltd _ GTBank/download (19).svg" alt="Find a Branch"></div>
+      <h3 class="icon-text">Find a Branch</h3>
+    </div>
+    <div class="icons">
+      <div class="icon-img"><img src="/Guaranty Trust Bank Ltd _ GTBank/download (18).svg" alt="Downloads"></div>
+      <h3 class="icon-text">Downloads</h3>
+    </div>
+    <div class="icons">
+      <div class="icon-img"><img src="/Guaranty Trust Bank Ltd _ GTBank/Media Centre _ GTBank/download (5).svg" alt="">
+      </div>
+      <h3 class="icon-text">Self Service</h3>
+    </div>
+
+    <div class="icons">
+      <div class="icon-img"><img src="/Guaranty Trust Bank Ltd _ GTBank/download (27).svg" alt="Help Centre"></div>
+      <h3 class="icon-text">Help Centre</h3>
+    </div>
+
+    <div class="icons">
+      <div class="icon-img"><img src="/Guaranty Trust Bank Ltd _ GTBank/download (25).svg" alt="Video Authentication">
+      </div>
+      <h3 class="icon-text">Video Authentication</h3>
+    </div>
+    <div class="icons">
+      <div class="icon-img"><img src="/Guaranty Trust Bank Ltd _ GTBank/download (17).svg" alt="HabariPay"></div>
+      <h3 class="icon-text">HabariPay</h3>
+    </div>
+    <div class="icons">
+      <div class="icon-img"><img src="/Guaranty Trust Bank Ltd _ GTBank/download (1).svg" alt="Investments"></div>
+      <h3 class="icon-text">Investments</h3>
+    </div>
+    <div class="icons">
+      <div class="icon-img"><img src="/Guaranty Trust Bank Ltd _ GTBank/download (24).svg" alt="Pension"></div>
+      <h3 class="icon-text">Pension</h3>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h4>Personal</h4>
+        <a href="#">Savings Account</a>
+        <a href="#">Current Accounts</a>
+        <a href="#">Compare Account</a>
+        <a href="#">Cards</a>
+        <a href="#">Non Resident Nigerian Service</a>
+        <a href="#">Loans</a>
+        <a href="#">Ways to Bank</a>
+        <a href="#">Private Banking</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Business</h4>
+        <a href="#">Business Banking</a>
+        <a href="#">Cards</a>
+        <a href="#">e-Banking Services</a>
+        <a href="#">Commercial Banking</a>
+        <a href="#">Corporate Banking</a>
+        <a href="#">Loans & Advances</a>
+        <a href="#">SME Banking</a>
+        <a href="#">HabariPay</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>About Us</h4>
+        <a href="#">Our Company</a>
+        <a href="#">Careers</a>
+        <a href="#">Corporate Social Responsibility</a>
+        <a href="#">Investor Relations</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Squad by HabariPay</a>
+        <a href="#">Guaranty Trust Fund Managers</a>
+        <a href="#">Guaranty Trust Pension Managers</a>
+      </div>
+      <div class="footer-col">
+        <h4>Help & Security</h4>
+        <a href="#">Account Reactivation</a>
+        <a href="#">Complaints & Enquiries</a>
+        <a href="#">Customer Feedback Survey</a>
+        <a href="#">Dispense Error</a>
+        <a href="#">Help Videos</a>
+        <a href="#">Self Service</a>
+        <a href="#">Security Centre</a>
+        <a href="#">Whistle Blower</a>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="#">Find a Branch/ATM</a>
+        <a href="#">All Branches</a>
+        <a href="#">All your banking forms in one place</a>
+        <a href="#">BVN Linking Portal</a>
+        <a href="#">Financial Calculators</a>
+        <a href="#">iRefer</a>
+        <a href="#">Media Centre</a>
+        <a href="#">Internal Links</a>
+        <a href="">Video Authentication</a>
+        <a href="#">Open an Account</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <div class="gtconnect-logo">
+        <img src="/Guaranty Trust Bank Ltd _ GTBank/download (23).svg" alt="GTConnect" width="160px">
+        <p>24 hour Contact Centre</p>
+      </div>
+      <div class="footer-numbers">
+        <div class="numbers-row">
+          <a href="tel:+2342014480000">+234 201 448 0000</a>
+          <a href="tel:+2347004826328">+234 700 4826 66328</a>
+          <a href="tel:+2348029002900">+234 802 900 2900</a>
+          <a href="tel:+2348039003900">+234 803 900 3900</a>
+          <a href="tel:+2348139856000">+234 813 985 6000</a>
+        </div>
+        <div class="numbers-row">
+          <a href="tel:+2342019080000">+234 201 908 0000</a>
+          <a href="tel:+2349040002900" class="whatsapp-link">
+            <i class="bi bi-whatsapp"></i> +234 904 000 2900
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- LAST FOOTER -->
+  <div class="last-footer">
+    <div class="last-footer-left">
+      2026 Guaranty Trust Bank Limited. RC 152321 (Licensed by the Central Bank of Nigeria). All Rights Reserved.
+    </div>
+    <div class="last-footer-right">
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Sitemap</a>
+      <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+
+.headerOne {
+  background-color: #fdf6f2;
+  border-bottom: 1px solid #dd4f05;
+  padding: 20px 70px;
+}
+
+#onlyNotice {
+  color: #dd4f05;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+#note {
+  font-size: 15px;
+  color: rgb(113, 113, 113);
+  line-height: 1.8;
+  max-width: 900px;
+}
+
+
+header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 50px;
+  position: relative;
+  z-index: 9999;
+  width: 70%;
+}
+
+.top-bar-left {
+  background-color: #e05a00;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 25px;
+  width: 50%;
+  height: 100%;
+  flex: 1;
+  min-height: 50px;
+  padding: 0 65px;
+}
+
+.top-bar-left ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  flex-wrap: nowrap;
+  padding-top: 10px;
+
+}
+
+.top-bar-left ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.country-dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.country-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  border: none;
+  border-radius: 30px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.country-btn img {
+  width: 22px;
+  height: 16px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.country-list {
+  display: none;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: white;
+  width: 220px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.country-dropdown:hover .country-list {
+  display: block;
+}
+
+.country-list a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.country-list a:hover {
+  background: #f5f5f5;
+}
+
+.country-list img {
+  width: 22px;
+  height: 16px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.login-btn {
+  background-color: #AB3D04;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 200px;
+  transform: skewX(-20deg);
+  color: white;
+  border: none;
+  font-size: 10px;
+  font-weight: bold;
+  gap: 8px;
+  cursor: pointer;
+  padding: 0 30px 0 44px;
+  margin-left: -20px;
+  white-space: nowrap;
+}
+
+.login-btn1 {
+  display: none;
+}
+
+.login-btn:hover {
+  background-color: #a84300;
+}
+
+
+.main-nav {
+  background: white;
+  padding: 14px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  z-index: 9998;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.list>li>a {
+  text-decoration: none;
+  color: #222;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.list>li>a:hover {
+  color: #e05a00;
+}
+
+.gtco-logo {
+  padding: 10px 14px;
+}
+
+
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: white;
+  background: none;
+  border: none;
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #222;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.mobile-menu a:hover {
+  color: #e05a00;
+}
+
+.dropdown {
+  position: relative;
+}
+
+ul.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  width: 230px;
+  padding: 10px 0;
+  list-style: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-top: 3px solid #DD4F05;
+  display: none;
+  z-index: 9999;
+}
+
+.dropdown:hover>ul.dropdown-content {
+  display: block;
+}
+
+ul.dropdown-content li a,
+ul.nested-content li a {
+  display: block;
+  padding: 10px 16px;
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+ul.dropdown-content li a:hover,
+ul.nested-content li a:hover {
+  background-color: #f5f5f5;
+  color: #e05a00;
+}
+
+/* NESTED DROPDOWN */
+.nested-dropdown {
+  position: relative;
+}
+
+ul.nested-content {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: white;
+  width: 220px;
+  padding: 10px 0;
+  list-style: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: none;
+  z-index: 9999;
+}
+
+.nested-dropdown:hover>ul.nested-content {
+  display: block;
+}
+
+/* TOP BAR DROPDOWN */
+.top-bar-left .dropdown-content {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: white;
+  width: 180px;
+  padding: 8px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: none;
+  z-index: 9999;
+}
+
+.top-bar-left .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.top-bar-left .dropdown-content a {
+  display: block;
+  padding: 10px 16px;
+  color: #333;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.top-bar-left .dropdown-content a:hover {
+  background-color: #f5f5f5;
+}
+
+
+.responsive-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  display: none;
+  width: 100%;
+  padding: 8px 16px;
+  background: white;
+}
+
+
+/* HERO */
+.hero {
+  position: relative;
+  width: 100%;
+  /* height: 400px; */
+}
+
+/* SLIDER */
+.slider {
+  width: 100%;
+  /* height: 400px; */
+  overflow: hidden;
+  /* position: relative; */
+  /* border: thick solid green; */
+}
+
+.slides {
+  display: flex;
+  width: 500%;
+  animation: slideLeft 40s infinite;
+}
+
+.slide {
+  width: 20%;
+  flex-shrink: 0;
+  position: relative;
+  /* border: thick solid yellow; */
+}
+
+.slide img {
+  width: 100%;
+  /* height: 00px;              */
+  height: 100%;
+  object-fit: contain;
+}
+
+.slide.four {
+  /* background-color: green; */
+  background-image: url("/Guaranty Trust Bank Ltd _ GTBank/imgi_53_gtworld_web-1_2026-02-23-164520_rrbq.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.slide.one {
+  /* background-color: green; */
+  background-image: url("/Guaranty Trust Bank Ltd _ GTBank/imgi_50_qcl_web-1_2026-02-23-164502_svzo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.slide .text {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 80px;
+  width: 400px;
+  /* text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); */
+}
+
+.slide .text1 {
+  color: #E36C09;
+  margin-bottom: 30px;
+}
+
+.slide .text span {
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  /* margin-top: 8px; */
+  color: #E36C09;
+}
+
+.slide .btn {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  z-index: 5;
+}
+
+.slide .btn button {
+  background-color: #e05a00;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+/* BANKING CARD */
+.banking-card {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  padding: 28px;
+  width: 280px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.banking-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+.tab-btns {
+  display: flex;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 8px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #888;
+}
+
+.tab-btn.active {
+  color: #e05a00;
+  border-bottom: 2px solid #e05a00;
+  margin-bottom: -2px;
+  font-weight: bold;
+}
+
+.login-card-btn {
+  background-color: #e05a00;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.login-card-btn:hover {
+  background-color: #c44f00;
+}
+
+.card-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-size: 14px;
+}
+
+.card-links a {
+  color: #555;
+  text-decoration: none;
+}
+
+.card-links a:hover {
+  color: #e05a00;
+}
+
+.card-links span {
+  color: #ccc;
+}
+
+.btn button {
+  background-color: #e05a00;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.products-section {
+  background-color: #dedede;
+  padding: 80px 70px;
+}
+
+.products-section h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #5b5b5b;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.products-section p {
+  text-align: center;
+  font-size: 16px;
+  color: #5b5b5b;
+  margin-bottom: 40px;
+}
+
+.grid-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.grid-card {
+  background: white;
+  border-radius: 8px;
+  width: 260px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.grid-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.grid-photo {
+  background-color: #ccc;
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.grid-photo-1 {
+  background-color: #ccc;
+  width: 110px;
+  height: 180px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.grid-photo-2 {
+  background-color: #ccc;
+  width: 100%;
+  height: 175px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.grid-card .grid-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2a2a2a;
+  text-transform: capitalize;
+  padding: 10px 10px 0;
+}
+
+.grid-card .grid-note {
+  font-size: 13px;
+  color: #2a2a2a;
+  padding: 12px 10px;
+  line-height: 1.5;
+}
+
+.grid-card .grid-link {
+  font-size: 13px;
+  color: #dd4f05;
+  padding: 0 10px 14px;
+  font-weight: bold;
+  display: block;
+}
+
+.grid-card .grid-link:hover {
+  color: #7e2c03;
+}
+
+/* .initiatives-section */
+.intiative{
+  margin: auto;
+  width: 90%;
+}
+
+
+/* ── FOOTER ── */
+footer {
+  background: white;
+  padding: 60px 70px 30px;
+}
+
+.footer-columns {
+  display: flex;
+  gap: 70px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.footer-col h4 {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+.footer-col a {
+  display: block;
+  font-size: 12px;
+  color: #555;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.footer-col a:hover {
+  color: #e05a00;
+}
+
+.footer-bottom-bar {
+  border-top: 1px solid #eee;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-phone {
+  font-size: 13px;
+  font-weight: bold;
+  color: #757575;
+  line-height: 1.8;
+}
+
+/* ── LAST FOOTER ── */
+.footer-bottom-bar {
+  border-top: 1px solid #eee;
+  padding: 40px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.gtconnect-logo img {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.gtconnect-logo p {
+  font-size: 13px;
+  color: #777;
+}
+
+.footer-numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.numbers-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.numbers-row a {
+  color: #555;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.numbers-row a:hover {
+  color: #e05a00;
+}
+
+.whatsapp-link {
+  color: #25d366;
+}
+
+.whatsapp-link i {
+  margin-right: 4px;
+}
+
+/* LAST FOOTER */
+.last-footer {
+  background-color: #3d3d3d;
+  color: #ccc;
+  padding: 20px 70px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.last-footer-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.last-footer-right a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.last-footer-right a:hover {
+  color: white;
+}
+
+.social-icon {
+  background: #555;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.social-icon:hover {
+  background: #e05a00;
+  color: white;
+}
+
+
+.icon-text {
+  font-family: acumin-pro, sans-serif;
+  font-size: 13.6px;
+  font-weight: 600;
+  line-height: 20.4px;
+  color: rgb(85, 92, 98);
+  margin-top: 12px;
+  text-align: center;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  padding: 45px 0;
+}
+
+.icons {
+  width: 110px;
+  text-align: center;
+}
+
+.icon-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  transition: background 0.2s;
+}
+
+.icon-img:hover {
+  color: #a84300;
+}
+
+.icon-img img {
+  max-width: 60px;
+  max-height: 60px;
+  object-fit: contain;
+}
+
+.icon-img:hover {
+  color: white;
+  background-color: #a84300;
+
+}
+
+/* Large desktops (default - 4 cards per row) */
+.initiatives-section {
+  padding: 60px 40px;
+}
+
+.initiative-card .card-img-collage img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+@keyframes slideLeft {
+  0%   { transform: translateX(0); }
+  20%  { transform: translateX(0); }
+  25%  { transform: translateX(-20%); }
+  40%  { transform: translateX(-20%); }
+  45%  { transform: translateX(-40%); }
+  60%  { transform: translateX(-40%); }
+  65%  { transform: translateX(-60%); }
+  80%  { transform: translateX(-60%); }
+  85%  { transform: translateX(-80%); }
+  100% { transform: translateX(-80%); }
+}
+
+/* =============================================
+   LARGE SCREENS DEFAULT (≥ 1200px)
+   ============================================= */
+
+.icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 60px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 0 0 calc(12.5% - 20px); /* 8 per row */
+}
+
+.icon-img img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.icon-text {
+  font-size: 0.85rem;
+  margin-top: 8px;
+}
+
+
+/* =============================================
+   ≤ 1199px — tablets landscape
+   ============================================= */
+@media (max-width: 1199px) {
+  .icon-container {
+    padding: 32px 40px;
+    gap: 16px;
+  }
+
+  .icons {
+    flex: 0 0 calc(25% - 16px); /* 4 per row */
+  }
+}
+
+
+/* =============================================
+   ≤ 992px — tablets
+   ============================================= */
+@media (max-width: 992px) {
+  .list {
+    gap: 12px;
+  }
+
+  .list > li > a {
+    font-size: 13px;
+  }
+
+  .banking-card {
+    width: 240px;
+    right: 20px;
+    padding: 20px;
+  }
+
+  .login-btn {
+    display: none;
+  }
+
+  .headerOne {
+    padding: 16px 30px;
+  }
+
+  /* Icon section */
+  .icon-container {
+    padding: 28px 24px;
+    gap: 16px;
+  }
+
+  .icons {
+    flex: 0 0 calc(25% - 16px); /* 4 per row */
+  }
+
+  .icon-img img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .icon-text {
+    font-size: 0.8rem;
+  }
+
+  /* Initiatives */
+  .initiatives-section {
+    padding: 40px 24px;
+  }
+
+  .initiative-card .card-img-collage img {
+    height: 180px;
+  }
+
+  .initiatives-section .section-title {
+    font-size: 1.6rem;
+  }
+}
+
+
+/* =============================================
+   ≤ 768px — tablets portrait / large phones
+   ============================================= */
+@media (max-width: 768px) {
+
+  /* NOTICE BAR */
+  .headerOne {
+    padding: 14px 16px;
+  }
+
+  #note {
+    font-size: 13px;
+  }
+
+  /* TOP BAR */
+  header {
+    padding: 0 16px;
+    background-color: white;
+  }
+
+  .top-bar-left {
+    display: none;
+  }
+
+  .top-bar-left ul {
+    display: none;
+  }
+
+  .login-btn {
+    width: 160px;
+    font-size: 11px;
+  }
+
+  /* MAIN NAV */
+  .main-nav nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .gtco-logo1 img {
+    width: 80px;
+  }
+
+  .gtco-logo {
+    display: none;
+  }
+
+  .mobile-logo {
+    margin-left: auto;
+  }
+
+  .main-nav {
+    padding: 10px 16px;
+  }
+
+  .responsive-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .responsive-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .login-btn2 {
+    background-color: #dd4f05;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 22px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+  }
+
+  /* HERO */
+  .hero {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slider {
+    height: 220px;
+  }
+
+  .slide img {
+    height: 220px;
+  }
+
+  .slide .text {
+    font-size: 18px;
+    bottom: 16px;
+    left: 16px;
+  }
+
+  .banking-card {
+    display: none;
+  }
+
+  /* ICON SECTION */
+  .icon-container {
+    width: 92%;
+    gap: 24px;
+    padding: 24px 16px;
+  }
+
+  .icons {
+    width: 95px;
+    flex: 0 0 calc(25% - 24px); /* 4 per row */
+  }
+
+  .icon-img img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .icon-text {
+    font-size: 0.75rem;
+  }
+
+  /* INITIATIVES */
+  .initiatives-section {
+    padding: 32px 16px;
+  }
+
+  #initiativesCarousel .row .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .initiative-card .card-img-collage img {
+    height: 200px;
+  }
+
+  .initiatives-section .section-title {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .carousel-control-next {
+    right: 0;
+    width: 40px;
+  }
+
+  /* FOOTER */
+  .last-footer {
+    flex-direction: column;
+    padding: 20px 16px;
+    text-align: center;
+  }
+
+  .last-footer-right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+  }
+
+  .numbers-row {
+    gap: 12px;
+  }
+
+  .country-dropdown {
+    display: none;
+  }
+}
+
+
+/* =============================================
+   ≤ 575px — small phones
+   ============================================= */
+@media (max-width: 575px) {
+  /* INITIATIVES */
+  .initiatives-section {
+    padding: 24px 12px;
+  }
+
+  #initiativesCarousel .row .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .initiative-card .card-img-collage img {
+    height: 160px;
+  }
+
+  .initiative-card .card-body {
+    padding: 12px;
+  }
+
+  .initiative-card .card-title {
+    font-size: 1rem;
+  }
+
+  .initiative-card .card-text {
+    font-size: 0.85rem;
+  }
+
+  .initiatives-section .section-title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .carousel-control-next {
+    right: 0;
+    width: 36px;
+  }
+
+  /* ICON SECTION */
+  .icon-container {
+    padding: 20px 12px;
+    gap: 12px;
+  }
+
+  .icons {
+    flex: 0 0 calc(25% - 12px); /* 4 per row */
+    width: auto;
+  }
+
+  .icon-img img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .icon-text {
+    font-size: 0.7rem;
+    margin-top: 5px;
+  }
+}
+
+
+/* =============================================
+   ≤ 480px — extra small phones
+   ============================================= */
+@media (max-width: 480px) {
+  #onlyNotice {
+    font-size: 16px;
+  }
+
+  #note {
+    font-size: 12px;
+  }
+
+  .flag-btn {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  .login-btn {
+    width: 130px;
+    font-size: 10px;
+  }
+
+  .slider {
+    height: 180px;
+  }
+
+  .slide img {
+    height: 180px;
+  }
+
+  .slide .text {
+    font-size: 14px;
+  }
+
+  .banking-card h3 {
+    font-size: 16px;
+  }
+
+  .login-card-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  /* ICON SECTION */
+  .icon-container {
+    gap: 10px;
+    padding: 16px 10px;
+  }
+
+  .icons {
+    flex: 0 0 calc(25% - 10px);
+  }
+
+  .icon-img img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .icon-text {
+    font-size: 0.65rem;
+  }
+}

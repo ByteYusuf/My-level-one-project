@@ -1,0 +1,775 @@
+﻿001:00: <!DOCTYPE html>
+002:00: <html lang="en">
+003:00: 
+004:00: <head>
+005:00:     <meta charset="UTF-8">
+006:00:     <link rel="stylesheet" href="CSS/services.css">
+007:00:     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+008:00:     <title>Services | GTBank</title>
+009:00:     <link rel="shortcut icon"
+010:00:         href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/GTBank_logo.svg/960px-GTBank_logo.svg.png"
+011:00:         type="image/x-icon">
+012:00:     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+013:00:     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+014:00:     <style>
+015:00: 
+016:00:     </style>
+017:00: </head>
+018:00: 
+019:00: <body>
+020:00: 
+021:00:     <!-- NOTICE BAR -->
+022:01:     <div class="notice-bar">
+023:01:         <div class="notice-title">Important Notice:</div>
+024:02:         <div class="notice-text">Please be mindful of fake sites run by fraudulent parties posing as Guaranty Trust Bank
+025:02:             Ltd
+026:02:             or its affiliates. Do not disclose your personal information and financial details to anyone online or
+027:02:             anywhere
+028:01:             else.</div>
+029:00:     </div>
+030:00: 
+031:00:     <!-- TOP BAR -->
+032:00:     <header>
+033:01:         <div class="top-bar-left">
+034:02:             <div class="country-dropdown">
+035:02:                 <button class="country-btn">
+036:02:                     <img src="https://flagcdn.com/w40/ng.png" alt="">
+037:02:                     â–¾
+038:02:                 </button>
+039:02: 
+040:03:                 <div class="country-list">
+041:03: 
+042:03:                     <a href="#">
+043:03:                         <img src="https://flagcdn.com/w40/ng.png" alt="">
+044:03:                         Nigeria
+045:03:                     </a>
+046:03: 
+047:03:                     <a href="#">
+048:03:                         <img src="https://flagcdn.com/w40/gh.png" alt="">
+049:03:                         Ghana
+050:03:                     </a>
+051:03: 
+052:03:                     <a href="#">
+053:03:                         <img src="https://flagcdn.com/w40/gm.png" alt="">
+054:03:                         Gambia
+055:03:                     </a>
+056:03: 
+057:03:                     <a href="#">
+058:03:                         <img src="https://flagcdn.com/w40/ke.png" alt="">
+059:03:                         Kenya
+060:03:                     </a>
+061:03: 
+062:03:                     <a href="#">
+063:03:                         <img src="https://flagcdn.com/w40/tz.png" alt="">
+064:03:                         Tanzania
+065:03:                     </a>
+066:03: 
+067:03:                     <a href="#">
+068:03:                         <img src="https://flagcdn.com/w40/sl.png" alt="">
+069:03:                         Sierra Leone
+070:03:                     </a>
+071:03: 
+072:03:                     <a href="#">
+073:03:                         <img src="https://flagcdn.com/w40/rw.png" alt="">
+074:03:                         Rwanda
+075:03:                     </a>
+076:03: 
+077:03:                     <a href="#">
+078:03:                         <img src="https://flagcdn.com/w40/gb.png" alt="">
+079:03:                         United Kingdom
+080:03:                     </a>
+081:03: 
+082:03:                     <a href="#">
+083:03:                         <img src="https://flagcdn.com/w40/fr.png" alt="">
+084:03:                         France
+085:03:                     </a>
+086:03: 
+087:02:                 </div>
+088:01:             </div>
+089:01:             <ul>
+090:01:                 <li class="dropdown">
+091:01:                     <a href="#">Locate â–¾</a>
+092:02:                     <div class="dropdown-content">
+093:02:                         <a href="#">Locate a Branch</a>
+094:02:                         <a href="#">Locate an ATM</a>
+095:01:                     </div>
+096:01:                 </li>
+097:01:                 <li><a href="media.html">Media</a></li>
+098:01:                 <li><a href="help.html">Help Centre</a></li>
+099:01:                 <li><a href="#">Security</a></li>
+100:01:                 <li><a href="#"><i class="bi bi-search" style="color:white"></i></a></li>
+101:01:             </ul>
+102:00:         </div>
+103:00:         <button class="login-btn">
+104:00:             <i class="bi bi-lock"></i> Online Banking Login
+105:00:         </button>
+106:00:         <!-- <button class="login-btn1">
+107:00:       <i class="bi bi-lock"></i> Login
+108:00:     </button> -->
+109:00: 
+110:00:     </header>
+111:00:     <nav class="responsive-nav">
+112:00:         <ul>
+113:00:             <li>
+114:00:                 <a href="#">
+115:00:                     <img src="/menu bar.svg" alt="">
+116:00:                 </a>
+117:00:             </li>
+118:00: 
+119:00:             <li>
+120:00:                 <img src="/search icon.svg" alt="">
+121:00:             </li>
+122:00:             <button class="login-btn2">
+123:00:                 <i class="bi bi-lock"></i> Login
+124:00:             </button>
+125:00:         </ul>
+126:01:         <div class="gtco-logo1">
+127:01:             <img src="/Guaranty Trust Bank Ltd _ GTBank/download (199).svg" width="90px" alt="">
+128:00:         </div>
+129:00: 
+130:00:     </nav>
+131:00: 
+132:00:     <!-- MAIN NAV -->
+133:01:     <div class="main-nav">
+134:01:         <nav>
+135:01:             <ul class="list">
+136:01: 
+137:01:                 <li><a href="index.css"><i class="bi bi-house-fill" style="font-size:20px"></i></a></li>
+138:01: 
+139:01:                 <!-- PERSONAL -->
+140:01:                 <li class="dropdown">
+141:01:                     <a href="#">Personal</a>
+142:01:                     <ul class="dropdown-content">
+143:01:                         <li class="nested-dropdown">
+144:01:                             <a href="#">Accounts â€º</a>
+145:01:                             <ul class="nested-content">
+146:01:                                 <li><a href="Current.html">Current Accounts</a></li>
+147:01:                                 <li><a href="#">Savings Investment Accounts</a></li>
+148:01:                                 <li><a href="#">Compare Accounts</a></li>
+149:01:                                 <li><a href="#">Open an Account</a></li>
+150:01:                             </ul>
+151:01:                         </li>
+152:01:                         <li class="nested-dropdown">
+153:01:                             <a href="services.html">Services â€º</a>
+154:01:                             <ul class="nested-content">
+155:01:                                 <li><a href="#">e-Banking</a></li>
+156:01:                                 <li><a href="#">IMT Services</a></li>
+157:01:                                 <li><a href="#">Other Services</a></li>
+158:01:                             </ul>
+159:01:                         </li>
+160:01:                         <li class="nested-dropdown">
+161:01:                             <a href="#">Cards â€º</a>
+162:01:                             <ul class="nested-content">
+163:01:                                 <li><a href="#">Naira Debit Cards</a></li>
+164:01:                                 <li><a href="#">Dollar Debit Cards</a></li>
+165:01:                                 <li><a href="#">Dollar Credit Cards</a></li>
+166:01:                                 <li><a href="#">Prepaid Cards</a></li>
+167:01:                                 <li><a href="#">Compare Cards</a></li>
+168:01:                                 <li><a href="#">Card Secure</a></li>
+169:01:                                 <li><a href="#">Instant Card Issuance</a></li>
+170:01:                                 <li><a href="#">Card Deals</a></li>
+171:01:                             </ul>
+172:01:                         </li>
+173:01:                         <li class="nested-dropdown">
+174:01:                             <a href="#">Loans â€º</a>
+175:01:                             <ul class="nested-content">
+176:01:                                 <li><a href="#">Salary Advance</a></li>
+177:01:                                 <li><a href="#">School Fees Advance</a></li>
+178:01:                                 <li><a href="#">MaxAdvance</a></li>
+179:01:                                 <li><a href="#">MaxPlus</a></li>
+180:01:                                 <li><a href="#">GTMortgage</a></li>
+181:01:                                 <li><a href="#">Premium Advance</a></li>
+182:01:                                 <li><a href="#">QuickCredit</a></li>
+183:01:                             </ul>
+184:01:                         </li>
+185:01:                         <li class="nested-dropdown">
+186:01:                             <a href="#">Ways to Bank â€º</a>
+187:01:                             <ul class="nested-content">
+188:01:                                 <li><a href="#">GTWorld App</a></li>
+189:01:                                 <li><a href="#">Internet Banking</a></li>
+190:01:                                 <li><a href="#">ATMs</a></li>
+191:01:                                 <li><a href="#">GTAssistant</a></li>
+192:01:                                 <li><a href="#">GTExpress</a></li>
+193:01:                                 <li><a href="#">e-Branches</a></li>
+194:01:                                 <li><a href="#">GTConnect</a></li>
+195:01:                                 <li><a href="#">Video Authentication</a></li>
+196:01:                                 <li><a href="#">GT eToken Application</a></li>
+197:01:                             </ul>
+198:01:                         </li>
+199:01:                         <li><a href="#">Non Resident Nigerians (NRN) Service</a></li>
+200:01:                         <li class="nested-dropdown">
+201:01:                             <a href="#">Private Banking â€º</a>
+202:01:                             <ul class="nested-content">
+203:01:                                 <li><a href="#">Tailored Products</a></li>
+204:01:                                 <li><a href="#">Premium Services</a></li>
+205:01:                                 <li><a href="#">Why Choose GTBank?</a></li>
+206:01:                             </ul>
+207:01:                         </li>
+208:01:                     </ul>
+209:01:                 </li>
+210:01: 
+211:01:                 <!-- BUSINESS -->
+212:01:                 <li class="dropdown">
+213:01:                     <a href="#">Business</a>
+214:01:                     <ul class="dropdown-content">
+215:01:                         <li><a href="#">SME Banking</a></li>
+216:01:                         <li><a href="#">Business Banking</a></li>
+217:01:                         <li><a href="#">Commercial Banking</a></li>
+218:01:                         <li><a href="#">Corporate Banking</a></li>
+219:01:                         <li><a href="#">International Trade</a></li>
+220:01:                         <li><a href="#">Cards</a></li>
+221:01:                         <li><a href="#">Services</a></li>
+222:01:                     </ul>
+223:01:                 </li>
+224:01: 
+225:01:                 <!-- ABOUT US -->
+226:01:                 <li class="dropdown">
+227:01:                     <a href="./media.html">About Us</a>
+228:01:                     <ul class="dropdown-content">
+229:01:                         <li><a href="#">Our Company</a></li>
+230:01:                         <li><a href="#">Careers</a></li>
+231:01:                         <li><a href="#">Corporate Social Responsibility</a></li>
+232:01:                         <li><a href="#">COVID-19 Guidance</a></li>
+233:01:                     </ul>
+234:01:                 </li>
+235:01: 
+236:01:                 <li><a href="#">Open an Account</a></li>
+237:01: 
+238:01:             </ul>
+239:01:         </nav>
+240:01: 
+241:01:         <!-- HAMBURGER for mobile -->
+242:01:         <button class="hamburger"></button>
+243:01: 
+244:02:         <div class="gtco-logo">
+245:02:             <img src="/gt logo 2.svg" width="90px" alt="">
+246:01:         </div>
+247:00:     </div>
+248:00: 
+249:00:     <!-- MOBILE MENU -->
+250:01:     <div class="mobile-menu" id="mobileMenu">
+251:01:         <a href="#">ðŸ  Home</a>
+252:01:         <a href="#">Personal</a>
+253:01:         <a href="#">Business</a>
+254:01:         <a href="#">About Us</a>
+255:01:         <a href="#">Open an Account</a>
+256:00:     </div>
+257:00: 
+258:00:     <!-- HERO -->
+259:01:     <div class="page-hero">
+260:02:         <div class="page-hero-left">
+261:03:             <div>
+262:03:                 <h1>Our Services</h1>
+263:03:                 <div class="subtitle">Designed for Your Convenience.</div>
+264:03:                 <p>Banking and finance are no one's favourite task, trust us we know. That's why we have a full set of
+265:03:                     services
+266:03:                     designed to make banking easier, faster, and more convenient for you.</p>
+267:02:             </div>
+268:01:         </div>
+269:02:         <div class="page-hero-right">
+270:02:             <!-- <img src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/imgi_55_Bankingservice.jpg" alt="Services"> -->
+271:01:         </div>
+272:00:     </div>
+273:00: 
+274:00:     <!-- STICKY SUB NAV -->
+275:01:     <div class="sub-nav">
+276:01:         <a href="#" class="sub-nav-item active" id="tab-ebanking" onclick="showSection('ebanking'); return false;">
+277:01:             <img src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/download (5).svg" alt="e-banking icon"
+278:01:                 style="width:32px; height:32px;">
+279:01:             e-Banking Services
+280:01:         </a>
+281:01:         <a href="#" class="sub-nav-item" id="tab-gtworld" onclick="showSection('gtworld'); return false;">
+282:01:             <img src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/download (2).svg" alt=" GTWorld icon"
+283:01:                 style="width:40px; height: 40px;">
+284:01:             New GTWorld App FAQs
+285:01:         </a>
+286:01:         <a href="#" class="sub-nav-item" id="tab-imt" onclick="showSection('imt'); return false;">
+287:01:             <img src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/download (4).svg" alt="IMT icon"
+288:01:                 style="width:40px; height:40px;">
+289:01:             IMT Services
+290:01:         </a>
+291:01:         <a href="#" class="sub-nav-item" id="tab-other" onclick="showSection('other'); return false;">
+292:01:             <img src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/download (6).svg" alt="Other Services icon"
+293:01:                 style="width:40px; height:40px;">
+294:01:             Other Services
+295:01:         </a>
+296:00:     </div>
+297:00: 
+298:00:     <!-- E-BANKING SERVICES SECTION -->
+299:01:     <div class="service-section active" id="section-ebanking">
+300:02:         <div class="service-layout">
+301:03:             <div class="service-sidebar">
+302:03:                 <h2>e-Banking Services</h2>
+303:03:                 <p>Don't wait in line, get online with our e-banking services for the best banking experience anywhere,
+304:03:                     everywhere.</p>
+305:02:             </div>
+306:03:             <div class="service-main">
+307:04:                 <div class="service-cards-grid">
+308:04: 
+309:05:                     <div class="service-card">
+310:06:                         <div class="card-icon"><img
+311:06:                                 src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/imgi_56_placeholder-icon-26.svg"
+312:05:                                 alt="GeNS icon" width="270px"></div>
+313:05:                         <h3>GeNS</h3>
+314:05:                         <p>Making sure nothing gets past you.</p>
+315:05:                         <a href="#" class="learn-more-link">Learn More</a>
+316:04:                     </div>
+317:04: 
+318:05:                     <div class="service-card">
+319:06:                         <div class="card-icon"><img
+320:06:                                 src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/imgi_57_placeholder-icon-28.svg"
+321:05:                                 alt="GT Sweep icon" width="270px"></div>
+322:05:                         <h3>GT Sweep</h3>
+323:05:                         <p>Leave your boring routines to us, for your time's sake.</p>
+324:05:                         <a href="#" class="learn-more-link">Learn More </a>
+325:04:                     </div>
+326:04: 
+327:05:                     <div class="service-card">
+328:05: 
+329:06:                         <div class="card-icon"><img
+330:06:                                 src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/imgi_58_gtrescue.png"
+331:05:                                 alt="GTRescue icon" width="270px"></div>
+332:05: 
+333:05:                         <h3>GTRescue</h3>
+334:05:                         <p>Never be stranded or Cash Strapped.</p>
+335:05:                         <a href="#" class="learn-more-link">Learn More</a>
+336:04:                     </div>
+337:04: 
+338:05:                     <div class="service-card">
+339:06:                         <div class="card-icon"><img
+340:06:                                 src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/imgi_59_placeholder-icon-29.svg"
+341:05:                                 alt="i-Refer icon" width="270px"></div>
+342:05:                         <h3>i-Refer</h3>
+343:05:                         <p>Share the services you love with your loved ones.</p>
+344:05:                         <a href="#" class="learn-more-link">Learn More </a>
+345:04:                     </div>
+346:04: 
+347:05:                     <div class="service-card">
+348:06:                         <div class="card-icon">
+349:06:                             <img src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/imgi_60_service-logo-irequire@3x.png"
+350:06:                                 alt="i-Require icon" width="270px">
+351:05:                         </div>
+352:05:                         <h3>iRequire</h3>
+353:05:                         <p>Banking done at your convenience.</p>
+354:05:                         <a href="#" class="learn-more-link">Learn More </a>
+355:04:                     </div>
+356:04: 
+357:05:                     <div class="service-card">
+358:06:                         <div class="card-icon"><img
+359:06:                                 src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/imgi_61_placeholder-icon-30.svg"
+360:06:                                 alt="Spend 2 Save icon" width="270px">
+361:05:                         </div>
+362:05:                         <h3>Spend 2 Save</h3>
+363:05:                         <p>Make your expenses save for you.</p>
+364:05:                         <a href="#" class="learn-more-link">Learn More </a>
+365:04:                     </div>
+366:04: 
+367:05:                     <div class="service-card">
+368:06:                         <div class="card-icon"><img
+369:06:                                 src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/imgi_62_placeholder-icon-31.svg"
+370:05:                                 alt="Online Bill Payment icon" width="270px"></div>
+371:05:                         <h3>Online Bill Payment</h3>
+372:05:                         <p>Still bills, but without the ills of physical inconvenience.</p>
+373:05:                         <a href="#" class="learn-more-link">Learn More </a>
+374:04:                     </div>
+375:04: 
+376:05:                     <div class="service-card">
+377:06:                         <div class="card-icon"><img
+378:06:                                 src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/imgi_63_placeholder-icon-32.svg"
+379:05:                                 alt="Airline Ticket Payment icon" width="270px"></div>
+380:05:                         <h3>Airline Ticket Payment</h3>
+381:05:                         <p>Book your ticket the way you travel; on the fly.</p>
+382:05:                         <a href="#" class="learn-more-link">Learn More</a>
+383:04:                     </div>
+384:04: 
+385:05:                     <div class="service-card">
+386:06:                         <div class="card-icon"><img
+387:06:                                 src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/imgi_64_token.png"
+388:05:                                 alt="Security Token icon" width="270px"></div>
+389:05:                         <h3>Security Token</h3>
+390:05:                         <p>All the security you need for your financial transactions.</p>
+391:05:                         <a href="#" class="learn-more-link">Learn More </a>
+392:04:                     </div>
+393:04: 
+394:05:                     <div class="service-card">
+395:06:                         <div class="card-icon"><img
+396:06:                                 src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/imgi_65_placeholder-icon-44.svg"
+397:06:                                 alt="GT Tracker icon" width="270px">
+398:05:                         </div>
+399:05:                         <h3>GT Trade Tracker</h3>
+400:05:                         <p>Keep up to date on your international trade transactions.</p>
+401:05:                         <a href="#" class="learn-more-link">Learn More </a>
+402:04:                     </div>
+403:04: 
+404:03:                 </div>
+405:02:             </div>
+406:01:         </div>
+407:00:     </div>
+408:00: 
+409:00:     <!-- NEW GTWORLD APP FAQs SECTION -->
+410:01:     <div class="service-section" id="section-gtworld">
+411:02:         <div class="service-layout">
+412:03:             <div class="service-sidebar">
+413:03:                 <h2>New GTWorld App FAQs</h2>
+414:03:                 <p>Get answers to frequently asked questions about the new GTWorld App.</p>
+415:02:             </div>
+416:03:             <div class="service-main">
+417:04:                 <div class="service-cards-grid">
+418:05:                     <div class="service-card">
+419:05:                         <div class="card-icon"><i class="bi bi-phone"></i></div>
+420:05:                         <h3>Getting Started</h3>
+421:05:                         <p>Learn how to set up and get started with the new GTWorld App.</p>
+422:05:                         <a href="#" class="learn-more-link">Learn More</a>
+423:04:                     </div>
+424:05:                     <div class="service-card">
+425:05:                         <div class="card-icon"><i class="bi bi-question-circle"></i></div>
+426:05:                         <h3>App Features</h3>
+427:05:                         <p>Discover all the features available on the new GTWorld App.</p>
+428:05:                         <a href="#" class="learn-more-link">Learn More </a>
+429:04:                     </div>
+430:05:                     <div class="service-card">
+431:05:                         <div class="card-icon"><i class="bi bi-gear"></i></div>
+432:05:                         <h3>Troubleshooting</h3>
+433:05:                         <p>Find solutions to common issues with the GTWorld App.</p>
+434:05:                         <a href="#" class="learn-more-link">Learn More </a>
+435:04:                     </div>
+436:03:                 </div>
+437:02:             </div>
+438:01:         </div>
+439:00:     </div>
+440:00: 
+441:00:     <!-- IMT SERVICES SECTION -->
+442:01:     <div class="service-section" id="section-imt">
+443:02:         <div class="service-layout">
+444:03:             <div class="service-sidebar">
+445:03:                 <h2>IMT Services</h2>
+446:03:                 <p>Receive money transfer from anywhere in the world through our IMT services and get paid in US
+447:03:                     Dollars.</p>
+448:02:             </div>
+449:03:             <div class="service-main">
+450:04:                 <div class="service-cards-grid">
+451:05:                     <div class="service-card">
+452:06:                         <div class="card-icon"><img
+453:06:                                 src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/imgi_66_Money-Transfer.svg"
+454:05:                                 alt="Money Transfer icon" width="270px"></div>
+455:05:                         <h3>GTBank International Money Transfer</h3>
+456:05:                         <p>Want to send money abroad or cash an international transfer? Just walk into any of our
+457:05:                             branches, and we
+458:05:                             will get it done; whether you have a GTBank Account or not.</p>
+459:05:                         <a href="#" class="learn-more-link">Learn More</a>
+460:04:                     </div>
+461:04: 
+462:05:                     <div class="service-card">
+463:06:                         <div class="card-icon">
+464:06:                             <img src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/imgi_67_service-logo-western-union@3x.png"
+465:06:                                 alt="Western Union logo" width="270px">
+466:05:                         </div>
+467:05:                         <h3>Western Union</h3>
+468:05:                         <p>Receive money from Western Union directly into your GTBank Account in real-time.</p>
+469:05:                         <a href="#" class="learn-more-link">Learn More </a>
+470:04:                     </div>
+471:04: 
+472:05:                     <div class="service-card">
+473:06:                         <div class="card-icon">
+474:06:                             <img src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/imgi_68_service-logo-moneygram@3x.png"
+475:06:                                 alt="MoneyGram logo" width="270px">
+476:05:                         </div>
+477:05:                         <h3>MoneyGram</h3>
+478:05:                         <p>Receive money from anywhere in the world in minutes.</p>
+479:05:                         <a href="#" class="learn-more-link">Learn More</a>
+480:04:                     </div>
+481:04: 
+482:05:                     <div class="service-card">
+483:06:                         <div class="card-icon">
+484:06:                             <img src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/imgi_69_Transfast_icon.png"
+485:06:                                 alt="Transfast logo" width="270px">
+486:05:                         </div>
+487:05:                         <h3>Transfast</h3>
+488:05:                         <p>Receive funds directly into Your Account.</p>
+489:05:                         <a href="#" class="learn-more-link">Learn More </a>
+490:04:                     </div>
+491:04: 
+492:05:                     <div class="service-card">
+493:06:                         <div class="card-icon">
+494:06:                             <img src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/imgi_70_remitly.png"
+495:06:                                 alt="Remitly logo" width="270px">
+496:05:                         </div>
+497:05:                         <h3>Remitly</h3>
+498:05:                         <p>The instant, secure, and convenient alternative for receiving funds directly into your GTBank
+499:05:                             account,
+500:05:                             from anywhere in the world.</p>
+501:05:                         <a href="#" class="learn-more-link">Learn More</a>
+502:04:                     </div>
+503:04: 
+504:05:                     <div class="service-card">
+505:06:                         <div class="card-icon">
+506:06:                             <img src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/imgi_71_Ria.png"
+507:06:                                 alt="RIA logo" width="270px">
+508:05:                         </div>
+509:05:                         <h3>RIA Account Deposit Money Transfer</h3>
+510:05:                         <p>A convenient alternative for receiving funds directly into any account in Nigeria.</p>
+511:05:                         <a href="#" class="learn-more-link">Learn More </a>
+512:04:                     </div>
+513:04: 
+514:05:                     <div class="service-card">
+515:05:                         <!-- <div class="card-icon"><i class="bi bi-cash-stack"></i></div> -->
+516:05:                         <h3>Thunes Account Deposit Money Transfer (ADMT)</h3>
+517:05:                         <p>Receive funds conveniently into your GTBank account.</p>
+518:05:                         <a href="#" class="learn-more-link">Learn More </a>
+519:04:                     </div>
+520:04: 
+521:03:                 </div>
+522:02:             </div>
+523:01:         </div>
+524:00:     </div>
+525:00: 
+526:00:     <!-- OTHER SERVICES SECTION -->
+527:01:     <div class="service-section" id="section-other">
+528:02:         <div class="service-layout">
+529:03:             <div class="service-sidebar">
+530:03:                 <h2>Other Services</h2>
+531:03:                 <p>Explore our range of other banking services designed to make your life easier.</p>
+532:02:             </div>
+533:03:             <div class="service-main">
+534:04:                 <div class="service-cards-grid">
+535:05:                     <div class="service-card">
+536:06:                         <div class="card-icon"><img
+537:06:                                 src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/imgi_72_placeholder-icon-35.svg"
+538:05:                                 alt="Fast-Track Banking" width="270px"></div>
+539:05:                         <h3>Fast-Track Banking</h3>
+540:05:                         <p>Now you can walk into our branches, complete your transactions and walk out before the track
+541:05:                             you are
+542:05:                             listening to is over.</p>
+543:05:                         <a href="#" class="learn-more-link">Learn More </a>
+544:04:                     </div>
+545:04: 
+546:04: 
+547:05:                     <!-- <div class="service-main"> -->
+548:06:                     <!-- <div class="service-cards-grid"> -->
+549:07:                     <div class="service-card">
+550:08:                         <div class="card-icon"><img
+551:08:                                 src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/imgi_73_placeholder-icon-37.svg"
+552:08:                                 alt="Foreign Currency Draft Issue" width="270px">
+553:07:                         </div>
+554:07:                         <h3>Foreign Currency Draft Issue</h3>
+555:07:                         <p>Got a Foreign Currency draft request? We've got the expertise and networks to help you out.
+556:07:                         </p>
+557:07:                         <a href="#" class="learn-more-link">Learn More </a>
+558:06:                     </div>
+559:06: 
+560:06: 
+561:07:                     <!-- <div class="service-main"> -->
+562:08:                     <!-- <div class="service-cards-grid"> -->
+563:09:                     <div class="service-card">
+564:10:                         <div class="card-icon"><img
+565:10:                                 src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/imgi_74_placeholder-icon-38.svg"
+566:10:                                 alt="Foreign Currency Draft Issue" width="270px">
+567:09:                         </div>
+568:09:                         <h3>Foreign Currency Draft Issue</h3>
+569:09:                         <p>Got a Foreign Currency draft request? We've got the expertise and networks to help you out.
+570:09:                         </p>
+571:09:                         <a href="#" class="learn-more-link">Learn More </a>
+572:08:                     </div>
+573:08: 
+574:08: 
+575:09:                     <!-- <div class="service-main"> -->
+576:10:                     <!-- <div class="service-cards-grid"> -->
+577:11:                     <div class="service-card">
+578:12:                         <div class="card-icon"><img
+579:12:                                 src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/imgi_75_placeholder-icon-39.svg"
+580:12:                                 alt="Foreign Currency Draft Issue" width="270px">
+581:11:                         </div>
+582:11:                         <h3>Foreign Currency Draft Issue</h3>
+583:11:                         <p>Got a Foreign Currency draft request? We've got the expertise and networks to help you out.
+584:11:                         </p>
+585:11:                         <a href="#" class="learn-more-link">Learn More </a>
+586:10:                     </div>
+587:10: 
+588:09:                 </div>
+589:08:             </div>
+590:08: 
+591:08: 
+592:07:         </div>
+593:06:     </div>
+594:06: 
+595:06:     <!-- 737 MOMENTS SECTION -->
+596:07:     <div class="moments-section">
+597:08:         <div class="moments-left">
+598:08:             <h2>737 Moments</h2>
+599:08:             <div class="subtitle">The New 737 Music Video</div>
+600:08:             <p>Open an account, transfer funds, pay bills, buy airtime or data and access our in-branch services right
+601:08:                 from
+602:08:                 your mobile phone.</p>
+603:08:             <a href="#" class="watch-btn">Watch the Video </a>
+604:07:         </div>
+605:08:         <div class="moments-right">
+606:08:             <img src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/imgi_2_placeholder-banner-07.png"
+607:08:                 alt="737 Moments">
+608:07:         </div>
+609:06:     </div>
+610:06: 
+611:06:     <!-- YOU MAY ALSO BE INTERESTED IN -->
+612:07:     <div class="interested-section">
+613:07:         <h2>You may also be interested in</h2>
+614:07:         <!-- ICON SECTION -->
+615:07:         <section class="icon-container">
+616:08:             <div class="icons">
+617:09:                 <div class="icon-img"><img src="/Guaranty Trust Bank Ltd _ GTBank/download (19).svg"
+618:09:                         alt="Find a Branch">
+619:08:                 </div>
+620:08:                 <h3 class="icon-text">Find a Branch</h3>
+621:07:             </div>
+622:08:             <div class="icons">
+623:09:                 <div class="icon-img"><img src="/Guaranty Trust Bank Ltd _ GTBank/download (18).svg" alt="Downloads">
+624:08:                 </div>
+625:08:                 <h3 class="icon-text">Downloads</h3>
+626:07:             </div>
+627:08:             <div class="icons">
+628:09:                 <div class="icon-img"><img
+629:08:                         src="/Guaranty Trust Bank Ltd _ GTBank/Media Centre _ GTBank/download (5).svg" alt=""></div>
+630:08:                 <h3 class="icon-text">Self Service</h3>
+631:07:             </div>
+632:08:             <div class="icons">
+633:08:                 <div class="icon-img"><img src="/Guaranty Trust Bank Ltd _ GTBank/download (27).svg" alt=""></div>
+634:08:                 <h3 class="icon-text">Help Centre</h3>
+635:07:             </div>
+636:08:             <div class="icons">
+637:09:                 <div class="icon-img"><img src="/Guaranty Trust Bank Ltd _ GTBank/download (25).svg"
+638:09:                         alt="Video Authentication">
+639:08:                 </div>
+640:08:                 <h3 class="icon-text">Video Authentication</h3>
+641:07:             </div>
+642:08:             <div class="icons">
+643:09:                 <div class="icon-img"><img src="/Guaranty Trust Bank Ltd _ GTBank/download (17).svg" alt="HabariPay">
+644:08:                 </div>
+645:08:                 <h3 class="icon-text">HabariPay</h3>
+646:07:             </div>
+647:08:             <div class="icons">
+648:09:                 <div class="icon-img"><img src="/Guaranty Trust Bank Ltd _ GTBank/download (1).svg" alt="Investments">
+649:08:                 </div>
+650:08:                 <h3 class="icon-text">Investments</h3>
+651:07:             </div>
+652:08:             <div class="icons">
+653:09:                 <div class="icon-img"><img src="/Guaranty Trust Bank Ltd _ GTBank/download (24).svg" alt="Pension">
+654:08:                 </div>
+655:08:                 <h3 class="icon-text">Pension</h3>
+656:07:             </div>
+657:07:         </section>
+658:06:     </div>
+659:06: 
+660:06:         <!-- FOOTER -->
+661:06:         <footer>
+662:07:             <div class="footer-columns">
+663:08:                 <div class="footer-col">
+664:08:                     <h4>Personal</h4>
+665:08:                     <a href="#">Savings Account</a>
+666:08:                     <a href="#">Current Accounts</a>
+667:08:                     <a href="#">Compare Account</a>
+668:08:                     <a href="#">Cards</a>
+669:08:                     <a href="#">Non Resident Nigerian (NRN) Service</a>
+670:08:                     <a href="#">Loans</a>
+671:08:                     <a href="#">Ways to Bank</a>
+672:08:                     <a href="#">Private Banking</a>
+673:07:                 </div>
+674:08:                 <div class="footer-col">
+675:08:                     <h4>Business</h4>
+676:08:                     <a href="#">Business Banking</a>
+677:08:                     <a href="#">Cards</a>
+678:08:                     <a href="#">e-Banking Services</a>
+679:08:                     <a href="#">Commercial Banking</a>
+680:08:                     <a href="#">Corporate Banking</a>
+681:08:                     <a href="#">Loans & Advances</a>
+682:08:                     <a href="#">SME Banking</a>
+683:08:                     <a href="#">HabariPay</a>
+684:07:                 </div>
+685:08:                 <div class="footer-col">
+686:08:                     <h4>About Us</h4>
+687:08:                     <a href="#">Our Company</a>
+688:08:                     <a href="#">Careers</a>
+689:08:                     <a href="#">Corporate Social Responsibility</a>
+690:08:                     <a href="#">Investor Relations</a>
+691:08:                     <a href="#">Contact Us</a>
+692:08:                     <a href="#">Squad by HabariPay</a>
+693:08:                     <a href="#">Guaranty Trust Fund Managers</a>
+694:08:                     <a href="#">Guaranty Trust Pension Managers</a>
+695:07:                 </div>
+696:08:                 <div class="footer-col">
+697:08:                     <h4>Help & Security</h4>
+698:08:                     <a href="#">Account Reactivation</a>
+699:08:                     <a href="#">Complaints Enquiries</a>
+700:08:                     <a href="#">Customer Feedback Survey</a>
+701:08:                     <a href="#">Dispense Error</a>
+702:08:                     <a href="#">Help Videos</a>
+703:08:                     <a href="#">Self Service</a>
+704:08:                     <a href="#">Security Centre</a>
+705:08:                     <a href="#">Whistle Blower</a>
+706:07:                 </div>
+707:08:                 <div class="footer-col">
+708:08:                     <h4>Quick Links</h4>
+709:08:                     <a href="#">Find a Branch/ATM</a>
+710:08:                     <a href="#">All Branches</a>
+711:08:                     <a href="#">All your banking forms in one place</a>
+712:08:                     <a href="#">BVN Linking Portal</a>
+713:08:                     <a href="#">Financial Calculators</a>
+714:08:                     <a href="#">iRefer</a>
+715:08:                     <a href="#">Media Centre</a>
+716:08:                     <a href="#">Internal Links</a>
+717:08:                     <a href="#">Video Authentication</a>
+718:08:                     <a href="#">Open an Account</a>
+719:07:                 </div>
+720:06:             </div>
+721:06: 
+722:07:             <div class="footer-bottom-bar">
+723:08:                 <div class="gtconnect-logo">
+724:08:                     <img src="/Guaranty Trust Bank Ltd _ GTBank/Services _ GTBank/download (1).svg" alt="GTConnect"
+725:08:                         width="160px">
+726:08:                     <!-- <p>24 hour Contact Centre</p> -->
+727:07:                 </div>
+728:08:                 <div class="footer-numbers">
+729:09:                     <div class="numbers-row">
+730:09:                         <a href="tel:+2342014480000">+234 201 448 0000</a>
+731:09:                         <a href="tel:+2347004826328">+234 700 4826 66328</a>
+732:09:                         <a href="tel:+2348029002900">+234 802 900 2900</a>
+733:09:                         <a href="tel:+2348039003900">+234 803 900 3900</a>
+734:09:                         <a href="tel:+2348139856000">+234 813 985 6000</a>
+735:08:                     </div>
+736:09:                     <div class="numbers-row">
+737:09:                         <a href="tel:+2342019080000">+234 201 908 0000</a>
+738:09:                         <a href="tel:+2349040002900" class="whatsapp-link">
+739:09:                             <i class="bi bi-whatsapp"></i> +234 904 000 2900
+740:09:                         </a>
+741:08:                     </div>
+742:07:                 </div>
+743:06:             </div>
+744:06:         </footer>
+745:06: 
+746:06:         <!-- LAST FOOTER -->
+747:07:         <div class="last-footer">
+748:08:             <div class="last-footer-left">
+749:08:                 2026 Guaranty Trust Bank Limited. RC 152321 (Licensed by the Central Bank of Nigeria). All Rights
+750:08:                 Reserved.
+751:07:             </div>
+752:08:             <div class="last-footer-right">
+753:08:                 <a href="#">Terms & Conditions</a>
+754:08:                 <a href="#">Privacy Policy</a>
+755:08:                 <a href="#">Sitemap</a>
+756:08:                 <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+757:08:                 <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+758:08:                 <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+759:08:                 <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+760:07:             </div>
+761:06:         </div>
+762:06: 
+763:06:         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+764:06:         <script>
+765:06:             function showSection(name) {
+766:06:                 document.querySelectorAll('.service-section').forEach(s => s.classList.remove('active'));
+767:06:                 document.querySelectorAll('.sub-nav-item').forEach(t => t.classList.remove('active'));
+768:06:                 document.getElementById('section-' + name).classList.add('active');
+769:06:                 document.getElementById('tab-' + name).classList.add('active');
+770:06:             }
+771:06:         </script>
+772:06: 
+773:06: </body>
+774:06: 
+775:06: </html>
