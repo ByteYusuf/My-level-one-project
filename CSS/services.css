@@ -685,7 +685,7 @@
         gap: 30px;
         flex-wrap: wrap;
         margin-bottom: 40px;
-    }
+    } 
 
     .footer-col h4 {
         font-size: 14px;
@@ -801,6 +801,54 @@
         background: #e05a00;
         color: white;
     }
+
+    details[open] .summary-div .bi-chevron-down {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+.bi-chevron-down {
+    transition: transform 0.3s ease;
+}
+
+
+summary{
+  list-style: none;
+  
+}
+
+.summary-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.personal-dropdown{
+  list-style: none;
+}
+
+.personal-dropdown li a{
+  text-decoration: none;
+  font-family: acumin-pro, sans-serif;
+font-size: 11px;
+font-weight: 400;
+line-height: 34px;
+color: rgb(105, 111, 115);
+
+}
+
+.personal-dropdown-content{
+  height: 33vh;
+  background-color: #F7F8F8;
+  padding: 20px 0 0 20px;
+}
+ .sum-item-details{
+  display: none;
+}
+
+
 /* =============================================
    ≤ 1199px — large tablets / small laptops
    ============================================= */
@@ -1074,6 +1122,18 @@
 
   .footer-bottom-bar {
     flex-direction: column;
+  }
+
+  .sum-item-details{
+    display: block;
+  }
+
+  .icon-container{
+    display: none;
+  }
+
+  .footer-columns{
+    display: none;
   }
 }
 

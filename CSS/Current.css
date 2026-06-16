@@ -464,7 +464,8 @@
         .accounts-layout {
             display: flex;
             gap: 20px;
-            align-items: flex-start;
+            /* align-items: flex-start; */
+            /* flex-wrap: wrap; */
             
         }
 
@@ -517,7 +518,7 @@
 
         .account-cards-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             /* flex-wrap: wrap; */
             gap: 16px;
         }
@@ -879,9 +880,7 @@
             font-size: 13px;
             text-wrap: nowrap;
         }
-        .last-footer-left{
-            /* text-wrap: nowrap; */
-        }
+       
 
         .last-footer-right a:hover {
             color: white;
@@ -901,7 +900,55 @@
         .social-icon:hover {
             background: #e05a00;
             color: white;
-        }
+        }  
+
+        
+    details[open] .summary-div .bi-chevron-down {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+.bi-chevron-down {
+    transition: transform 0.3s ease;
+}
+
+
+summary{
+  list-style: none;
+  
+}
+
+.summary-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.personal-dropdown{
+  list-style: none;
+}
+
+.personal-dropdown li a{
+  text-decoration: none;
+  font-family: acumin-pro, sans-serif;
+font-size: 11px;
+font-weight: 400;
+line-height: 34px;
+color: rgb(105, 111, 115);
+
+}
+
+.personal-dropdown-content{
+  height: 33vh;
+  background-color: #F7F8F8;
+  padding: 20px 0 0 20px;
+}
+ .sum-item-details{
+  display: none;
+}
+
 
 
   /* =============================================
@@ -912,8 +959,7 @@
   .accounts-section,
   .all-round,
   .interested-section {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 40px 24px;
   }
 
   .page-hero-left {
@@ -935,12 +981,11 @@
   .accounts-section,
   .all-round,
   .interested-section {
-    padding-left: 30px;
-    padding-right: 30px;
+   padding: 40px 24px;
   }
 
   .page-hero-left {
-    padding: 40px 30px;
+    padding: 40px 24px;
   }
 
   /* Icon section */
@@ -1067,6 +1112,7 @@
 
   .accounts-layout {
     flex-direction: column;
+    justify-content: center;
   }
 
   .accounts-sidebar {
@@ -1139,6 +1185,19 @@
   .last-footer-right {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  
+       .sum-item-details{
+    display: block;
+  }
+
+  .icon-container{
+    display: none;
+  }
+
+  .footer-columns{
+    display: none;
   }
 }
 
